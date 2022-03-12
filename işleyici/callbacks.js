@@ -1,6 +1,3 @@
 module.exports = (bot) => {
-    bot.onMessage({
-      respondToBots: false,
-      guildOnly: false
-    })
+    bot.onMessage({ respondToBots: false, guildOnly: false })
   }
