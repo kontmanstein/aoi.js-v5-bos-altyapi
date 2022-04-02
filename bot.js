@@ -1,7 +1,7 @@
 var http = require('http');
 var server = http.createServer(function (req, res) {res.write('');res.end();});server.listen(8080);
 
-const aoijs = require("aoi.js")
+const aoijs = require("aoi.js");
 const fs = require('node:fs');
 
 const bot = new aoijs.Bot({
@@ -14,20 +14,20 @@ database: {
     tables: ["main"],
     promisify: false
 },
-})
+});
 
 //Örnek Komut (ping)
 bot.command({
 name: "ping",
 code: `Pong! \`$pingms\``
-})
+});
 
 //Komut Yükleyici
 
 const loader = new aoijs.LoadCommands(bot);
 (async () => {
 await loader.load(bot.cmd, "./komutlar/")
-})()
+})();
 
 loader.setColors({
   walking: ["blink", "dim", "fgWhite"],
@@ -52,7 +52,7 @@ loader.setColors({
     text: ["bright", "fgGreen"]
   },
  
-})
+});
 
 //eventler
 const files = fs.readdirSync('./eventler').filter(file => file.endsWith('.js'))
@@ -61,6 +61,6 @@ require(`./eventler/${x}`)(bot)
 });
 
 //ayarlar
-require('./işleyici/durum')(bot)
-require('./işleyici/değişkenler')(bot)
-require('./işleyici/callbacks')(bot)
+require('./işleyici/durum')(bot);
+require('./işleyici/değişkenler')(bot);
+require('./işleyici/callbacks')(bot);
