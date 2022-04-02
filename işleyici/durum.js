@@ -4,5 +4,5 @@ module.exports = (bot) => {
         type: "LISTENING",
         status: "idle",
         time: 15
-    })
-}
+    });
+};
