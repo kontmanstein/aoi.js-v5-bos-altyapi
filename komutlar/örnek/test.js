@@ -14,4 +14,4 @@ description: "Örnek Komut",
 category: "Örnek",
 code:`
 Bu bir örnektir <@$authorID>`
-}]
+}];
