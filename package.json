@@ -4,13 +4,17 @@
     "description": "Aoi.JS v5 boş altyapı",
     "main": "bot.js",
     "scripts": {
-        "start": "node bot.js"
-    },
-    "engines": {
-        "node": "16.x"
+       "start": "npx node bot.js"
     },
     "license": "ISC",
+    "devDependencies": {
+      "node": "^17.3.1"
+    },
     "dependencies": {
-        "aoi.js": "^5.1.2"
+        "aoi.js": "^5.1.2",
+        "discord-giveaways": "^5.1.1",
+        "discord-modals": "^1.2.9",
+        "kontmanstein-utils": "^1.0.0",
+        "ms": "^2.1.3"
     }
 }
