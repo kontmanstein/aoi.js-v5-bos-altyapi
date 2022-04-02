@@ -13,4 +13,4 @@ module.exports = (bot) => {
     process.on('multipleResolves', (type, promise, reason) => {
         console.log('[hataAyıklayıcı] :: Çoklu Çözümler');
     });
-}
+};
