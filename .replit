@@ -1,4 +1,4 @@
-run = "npx npm i"
+run = "npx node bot.js"
 entrypoint = "bot.js"
 
 [interpreter]
