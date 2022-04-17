@@ -12,7 +12,7 @@
 
 module.exports = (bot) => [
     {
-    text: `$serverCount Sunucu | $allMembersCount Kişi | ${bot.prefix}yardım`,
+    text: `$serverCount Sunucu | $allMembersCount Kişi | ${bot.prefix.toString().split(',').join(', ') + " "}yardım`,
     type: "LISTENING",
     status: "idle",
     time: 15
