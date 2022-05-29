@@ -7,6 +7,7 @@
        "start": "npx node bot.js"
     },
     "license": "ISC",
+    "author": {"name": "Kont Manstein"},
     "devDependencies": {
       "node": "^17.3.1"
     },
