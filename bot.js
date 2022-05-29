@@ -1,4 +1,4 @@
-require('http').createServer(function (req, res) {res.write('');res.end();}).listen(8080);
+require('http').createServer((_req, res) => res.end()).listen(8080);
 
 const aoijs = require("aoi.js");
 const fs = require('node:fs');
